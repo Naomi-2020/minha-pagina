@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container">
+      <header>
+        <p>React JS</p>
       </header>
-    </div>
-  );
-}
 
-export default App;
+      <main>
+        <section className="box-titulo">
+          <h1>React JS</h1>
+          <p>Biblioteca Javascript para criar SPAs</p>
+
+          <a href="https://reactjs.org/" target="_black">
+            Site Oficial
+          </a>
+        </section>
+
+        <section className="box-requisitos">
+          <h2>Requisitos</h2>
+          <p>Veja abaixo os requisitos mínimos para aprender React JS:</p>
+
+          <div className="box-cards">
+            <div className="card">
+              <h3>HTML</h3>
+              <p>Aprender a estruturar os elementos da página com HTML </p>
+            </div>
+
+            <div className="card">
+              <h3>CSS</h3>
+              <p>Aprender a estilizar os elementos da página com CSS </p>
+            </div>
+
+            <div className="card">
+              <h3>JavaScript</h3>
+              <p>Aprender a linguagem utilizada pelo React JS, o JavaScript </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer></footer>
+    </div>
+  )
+}
